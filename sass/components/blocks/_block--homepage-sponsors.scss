@@ -31,17 +31,29 @@
       }
     }
 
-
     &.sponsor-2 {
       width: 70%;
+      height: 51px;
       img {
         width: 100% !important;
         max-width: none
       }
     }
 
+    &.sponsor-3 {
+      width: 29%;
+      margin-right: 11%;
+      margin-top: 10px;
+      img {height: 150px;}
+    }
+
+    &.sponsor-4 {
+      width: 60%;
+      margin-top: 10px;
+    }
+
     @include breakpoint(0 650px) {
-      &.sponsor-1, &.sponsor-2 {
+      &.sponsor-1, &.sponsor-2, &.sponsor-3, &.sponsor-4 {
         width: 100%;
         margin: 0;
         img {width: auto;}
