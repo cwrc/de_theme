@@ -3067,10 +3067,20 @@ ul.contextual-links li a {
   padding: 0;
 }
 
+.hide-this {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
 /* drupal/_forms.scss */
 .form-required,
 .marker {
   color: #c2002f;
+}
+
+-input.form-autocomplete {
+  width: 100%;
 }
 
 input.form-submit,
@@ -4919,13 +4929,14 @@ ul.language-switcher-locale-url ul li a.active {
   margin: 0 5%;
   padding: 0;
   width: 90%;
+  text-align: center;
 }
 #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li {
   margin-bottom: 0;
   list-style: none;
   list-style-image: none;
   display: inline-block;
-  float: left;
+  vertical-align: top;
 }
 #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-1 {
   width: 18%;
@@ -4936,21 +4947,50 @@ ul.language-switcher-locale-url ul li a.active {
 }
 #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-2 {
   width: 70%;
+  height: 51px;
 }
 #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-2 img {
   width: 100% !important;
   max-width: none;
 }
+#block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-3 {
+  margin-right: 11%;
+  margin-top: 10px;
+}
+#block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-3 img {
+  height: 100px;
+}
+#block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-4 {
+  width: 24%;
+  margin-top: 10px;
+  height: 106px;
+  position: relative;
+}
+#block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-4 img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
 @media (min-width: 0) and (max-width: 650px) {
-  #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-1, #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-2 {
+  #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-1, #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-2, #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-3, #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-4 {
     width: 100%;
     margin: 0;
+    display: block;
   }
-  #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-1 img, #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-2 img {
+  #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-1 img, #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-2 img, #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-3 img, #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-4 img {
     width: auto;
   }
   #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-1 {
     margin-bottom: 1.5em;
+  }
+  #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-4 {
+    height: auto;
+    position: initial;
+  }
+  #block-cwrc-theme-compat-sponsors-homepage-block ul.sponsors li.sponsor-4 img {
+    position: initial;
+    transform: none;
   }
 }
 #block-cwrc-theme-compat-sponsors-homepage-block span.more-sponsors a {
@@ -9336,9 +9376,6 @@ ul.privatemsg-message-actions {
 .view-project-featured-object {
   width: 100%;
 }
-.view-project-featured-object .clearfix:after {
-  display: none;
-}
 .view-project-featured-object .field-collection-container {
   padding: 0 .25em 0 .25em;
 }
@@ -9384,6 +9421,9 @@ ul.privatemsg-message-actions {
   .view-project-featured-object button.slick-next {
     right: 3%;
   }
+}
+.view-project-featured-object .clearfix:after {
+  display: none;
 }
 
 /* =============================================================================
@@ -10794,9 +10834,12 @@ div#BRnavline {
   font-weight: 900;
   line-height: 1.6;
 }
-.view-display-id-page_grid_3 .node-project .field-name-body {
-    display: none;
+.view-display-id-page_grid_3 .field-name-body {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
 }
+
 .sidebar .block form#views-exposed-form-project-overview-page-grid-3 input[type=checkbox] {
   width: auto;
 }
@@ -12583,3 +12626,5 @@ article.profile .field-name-field-full-name:before {
     margin-left: 0;
   }
 }
+
+/*# sourceMappingURL=de_theme.css.map */

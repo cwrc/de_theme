@@ -1223,6 +1223,12 @@ ul.contextual-links li a {
   padding: 0;
 }
 
+.hide-this {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
 /* =============================================================================
     Placeholders
    ========================================================================== */
@@ -1674,3 +1680,5 @@ body {
 .cke_editable {
   padding: 1em;
 }
+
+/*# sourceMappingURL=wysiwyg-editor.css.map */

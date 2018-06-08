@@ -14,13 +14,14 @@
   margin: 0 5%;
   padding: 0;
   width: 90%;
+  text-align: center;
 
   li {
     margin-bottom: 0;
     list-style: none;
     list-style-image: none;
     display: inline-block;
-    float: left;
+    vertical-align: top;
 
     &.sponsor-1 {
       width: 18%;
@@ -31,24 +32,54 @@
       }
     }
 
-
     &.sponsor-2 {
       width: 70%;
+      height: 51px;
       img {
         width: 100% !important;
         max-width: none
       }
     }
 
+    &.sponsor-3 {
+      margin-right: 11%;
+      margin-top: 10px;
+      img {height: 100px;}
+    }
+
+    &.sponsor-4 {
+      width: 24%;
+      margin-top: 10px;
+      height: 106px;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+      }
+    }
+
     @include breakpoint(0 650px) {
-      &.sponsor-1, &.sponsor-2 {
+      &.sponsor-1, &.sponsor-2, &.sponsor-3, &.sponsor-4 {
         width: 100%;
         margin: 0;
+        display: block;
         img {width: auto;}
       }
 
       &.sponsor-1 {
         margin-bottom: 1.5em;
+      }
+
+      &.sponsor-4 {
+        height: auto;
+        position: initial;
+        img {
+          position: initial;
+          transform: none;
+        }
       }
     }
   }
