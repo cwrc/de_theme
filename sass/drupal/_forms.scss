@@ -10,6 +10,10 @@
 
 //button
 
+-input.form-autocomplete {
+  width: 100%;
+}
+
 input.form-submit,
 input#edit-submit {
   @include btn;
