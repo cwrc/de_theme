@@ -6157,6 +6157,14 @@ a.soft-limit:hover {
   display: none;
 }
 
+/* Hide bookmark and stamp tab for anonymous users. */
+.not-logged-in.page-islandora-search #block-islandora-solr-cwrc-display-switch a[href*="bookmark"] {
+  display: none;
+}
+.not-logged-in.page-islandora-search #block-islandora-solr-cwrc-display-switch a[href*="stamp"] {
+  display: none;
+}
+
 .page-islandora-search .section-content #sidebar-first .block header {
   margin: -.7em;
   margin-bottom: 1em;

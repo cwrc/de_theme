@@ -24,6 +24,15 @@
   }
 }
 
+/* Hide bookmark and stamp tab for anonymous users. */
+.not-logged-in.page-islandora-search #block-islandora-solr-cwrc-display-switch {
+  a[href*="bookmark"] {
+    display: none;
+  }
+  a[href*="stamp"] {
+    display: none;
+  }
+}
 
 .page-islandora-search .section-content #sidebar-first .block {
   header {
