@@ -354,3 +354,111 @@ function de_theme_menu_local_task(&$variables) {
 
   return '<li' . drupal_attributes($li_options['attributes']) . '>' . $atag . $submenuhtml . "</li>\n";
 }
+
+
+
+
+
+/**
+ * Implements template_preprocess_HOOK().
+ */
+function de_theme_preprocess_islandora_default_edit(array &$variables) {
+  global $base_url;
+  $islandora_object = $variables['islandora_object'];
+  $datastreams = array();
+  $variables['islandora_editmetadata_url'] = $base_url . '/islandora/edit_form/' . $islandora_object->id;
+  module_load_include('inc', 'islandora', 'includes/datastream');
+  module_load_include('inc', 'islandora', 'includes/utilities');
+  $header = array();
+  $header[] = array('data' => t('ID'));
+  $header[] = array('data' => t('Label'));
+  $header[] = array('data' => t('Type'));
+  $header[] = array('data' => t('Mime type'));
+  $header[] = array('data' => t('Size'));
+  if (islandora_object_access(ISLANDORA_VIEW_DATASTREAM_HISTORY, $islandora_object)) {
+    $header[] = array('data' => t('Versions'));
+  }
+
+  $header[] = array('data' => t('Operations'), 'colspan' => '4');
+
+  $table_attributes = array('class' => array('manage-datastreams'));
+  $rows = array();
+  foreach ($islandora_object as $ds) {
+    $row = array();
+    $row[] = array(
+      'class' => 'datastream-id',
+      'data' => theme('islandora_datastream_view_link', array(
+        'datastream' => $ds,
+      )),
+    );
+    $row[] = array(
+      'class' => 'datastream-label',
+      'data' => filter_xss($ds->label),
+    );
+    $row[] = array(
+      'class' => 'datastream-control',
+      'data' => islandora_control_group_to_human_readable($ds->controlGroup),
+    );
+    $row[] = array(
+      'class' => 'datastream-mime',
+      'data' => filter_xss($ds->mimeType),
+    );
+    $row[] = array(
+      'class' => 'datastream-size',
+      'data' => islandora_datastream_get_human_readable_size($ds),
+    );
+    if (islandora_datastream_access(ISLANDORA_VIEW_DATASTREAM_HISTORY, $ds)) {
+      $row[] = array(
+        'class' => 'datastream-versions',
+        'data' => theme('islandora_datastream_version_link', array(
+          'datastream' => $ds,
+        )),
+      );
+    }
+    elseif (islandora_object_access(ISLANDORA_VIEW_DATASTREAM_HISTORY, $islandora_object)) {
+      $row[] = array();
+    }
+    $row[] = array(
+      'class' => 'datastream-replace',
+      'data' => theme('islandora_datastream_replace_link', array(
+        'datastream' => $ds,
+      )),
+    );
+    $row[] = array(
+      'class' => 'datastream-download',
+      'data' => theme('islandora_datastream_download_link', array(
+        'datastream' => $ds,
+      )),
+    );
+/*    $row[] = array(
+      'class' => 'datstream-edit',
+      'data' => theme('islandora_datastream_edit_link', array(
+        'datastream' => $ds,
+      )),
+    ); */
+    $row[] = array(
+      'class' => 'datastream-delete',
+      'data' => theme('islandora_datastream_delete_link', array(
+        'datastream' => $ds,
+      )),
+    );
+    $row[] = array(
+      'class' => 'datastream-regenerate',
+      'data' => theme('islandora_datastream_regenerate_link', array(
+        'datastream' => $ds,
+      )),
+    );
+    $rows[] = $row;
+  }
+  $caption = filter_xss($islandora_object->label) . ' - ' . $islandora_object->id;
+  $table = array(
+    'colgroups' => NULL,
+    'sticky' => TRUE,
+    'empty' => 'Error loading datastreams',
+    'caption' => $caption,
+    'header' => $header,
+    'rows' => $rows,
+    'attributes' => $table_attributes,
+  );
+  $variables['datastream_table'] = $table;
+}

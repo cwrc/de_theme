@@ -272,7 +272,7 @@ table {
 
 .section-content .block,
 .section-content .content {
-  ul {
+  ul:not(.krumo-node) {
     margin: 0;
     padding: 0;
 
