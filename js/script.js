@@ -36,6 +36,7 @@
             $('#main').addClass('full-width');
             $(this).html('<i class="fa fa-arrow-left"></i> <span class="sr-only">' + Drupal.t('Show sidebar') + '</span>');
           }
+          Drupal.CWRCWriter.writer.layoutManager.resizeAll();
         })
       });
     }
@@ -176,7 +177,23 @@
     }
   };
 
+  Drupal.behaviors.de_theme_cwrc_find_replace = {
+    attach: function (context, settings) {
+      "use strict";
+
+      $("#islandora-xquery-results-form").ready(function() {
+        $(window).keydown(function(event) {
+          if (event.keyCode == 13) {
+            event.preventDefault();
+            return false;
+          }
+        });
+      });
+    }
+  };
+
   $(function() {
+    console.log('hey');
       $('.cwrc-search-wrapper .grid-layout li').matchHeight();
       $('.islandora-basic-collection-grid .grid-layout li').matchHeight();
       $('.islandora-solr-grid .solr-grid-field').matchHeight();

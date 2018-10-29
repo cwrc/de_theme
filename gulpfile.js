@@ -41,9 +41,7 @@ gulp.task('compress', function(){
       path.basename += ".min";
       path.extname = ".js"
     }))
-    .pipe(uglify({
-      preserveComments: "some"
-    }))
+    .pipe(uglify())
     .pipe(gulp.dest(paths.js));
 });
 
