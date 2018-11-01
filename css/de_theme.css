@@ -4219,15 +4219,6 @@ table a {
   text-decoration: none;
 }
 
-.section-content .block ul:not(.krumo-node),
-.section-content .content ul {
-  margin: 0;
-  padding: 0;
-}
-div ul.krumo-node ul {
-	margin-left: 20px;
-}
-
 .section-content .block ul li,
 .section-content .content ul li {
   list-style-image: none;
