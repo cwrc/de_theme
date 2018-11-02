@@ -1,23 +1,20 @@
-
-
 /* =============================================================================
    GENERAL STYLES FOR SECTION CONTENT
    ========================================================================== */
 
-  //MAIN BACKGROUND
+//MAIN BACKGROUND
 
+.section-content {
+  background: #fff;
+  border-bottom: 1px solid $shade1;
+  border-top: 1px solid $shade1;
+}
+
+.page-node-dashboard, .page-user-dashboard {
   .section-content {
-    background: #fff;
-    border-bottom: 1px solid $shade1;
-    border-top: 1px solid $shade1;
+    background: #E2E2E2;
   }
-
-  .page-node-dashboard, .page-user-dashboard {
-    .section-content {
-      background: #E2E2E2;
-    }
-  }
-
+}
 
 .region-main-prefix-right {
   &:before {
@@ -26,120 +23,117 @@
     height: 100%;
     vertical-align: middle;
     margin-right: -0.25em; /* Adjusts for spacing */
+  }
+
+  #block-menu-block-7 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 95%;
+  }
+}
+
+//------------------------PAGE TITLE,LOGO AND MENU
+
+.main-prefix-section-wrapper {
+  clear: both;
+  padding: 1.5em 0;
+
+  .region-main-prefix, .region-main-prefix-right {
+
+    .container {
+      padding: 0;
+    }
+  }
+
+  h1#page-title {
+    font-weight: $bold;
+    margin: .5em 0 0;
+    word-break: break-word;
+    @include breakpoint($medium-screen) {
+      margin: .3em 0 0;
+    }
+    @include breakpoint(0 550px) {
+      float: none;
+    }
+  }
+
+  .region-main-prefix {
+    float: left;
+    width: 54%;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
     }
 
-    #block-menu-block-7 {
+    .container {
       display: inline-block;
       vertical-align: middle;
       width: 95%;
     }
-}
 
-
-  //------------------------PAGE TITLE,LOGO AND MENU
-
-  .main-prefix-section-wrapper {
-    clear: both;
-    padding: 1.5em 0;
-
-    .region-main-prefix, .region-main-prefix-right {
-
-      .container {
-        padding: 0;
-      }
+    @include breakpoint(0 550px) {
+      width: 100%;
+      margin-bottom: 1em;
     }
 
-    h1#page-title {
-      font-weight: $bold;
-      margin: .5em 0 0;
-      word-break: break-word;
-      @include breakpoint($medium-screen) {
-        margin: .3em 0 0;
-      }
-      @include breakpoint(0 550px) {
-        float: none;
-      }
-    }
-
-    .region-main-prefix {
+    #block-cwrc-projects-project-context-logo {
       float: left;
-      width: 54%;
 
-        &:before {
-          content: '';
-          display: inline-block;
-          height: 100%;
-          vertical-align: middle;
-        }
-
-      .container {
-        display: inline-block;
-        vertical-align: middle;
-        width: 95%;
-      }
-
-      @include breakpoint(0 550px) {
-        width: 100%;
-        margin-bottom: 1em;
-      }
-
-      #block-cwrc-projects-project-context-logo {
+      img {
+        height: 59px;
+        width: auto !important;
+        margin-right: 1em;
         float: left;
-
-        img {
-          height: 59px;
-          width: auto !important;
-          margin-right: 1em;
-          float: left;
-        }
-      }
-    }
-
-    .region-main-prefix-right {
-      float: right;
-      width: 42%;
-      margin-left: 4%;
-      @include breakpoint(0 550px) {
-        width: 100%;
-        margin-left: 0;
       }
     }
   }
 
-
-
-  //-----------------------------MENU IN HEADER
-
-  .sidebar .block,
-  .sidebar .block .view-content,
-  .sidebar .block .content {
-    a{
-      text-decoration: none;
-      font-weight: $bold;
-    }
-  }
-
-  .block-menu-block ul,
-  .region-main-prefix ul.action-links {
-    margin: 0;
-    padding: 0;
-    line-height: 50px;
+  .region-main-prefix-right {
     float: right;
-     @include breakpoint(0 550px) {
+    width: 42%;
+    margin-left: 4%;
+    @include breakpoint(0 550px) {
       width: 100%;
       margin-left: 0;
-     }
+    }
+  }
+}
 
-   li {
+//-----------------------------MENU IN HEADER
+
+.sidebar .block,
+.sidebar .block .view-content,
+.sidebar .block .content {
+  a {
+    text-decoration: none;
+    font-weight: $bold;
+  }
+}
+
+.block-menu-block ul,
+.region-main-prefix ul.action-links {
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+  float: right;
+  @include breakpoint(0 550px) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  li {
     list-style-image: none;
     list-style: none;
     float: left;
     margin-left: ms(0);
     margin-bottom: 0;
-     @include breakpoint(0 550px) {
+    @include breakpoint(0 550px) {
       width: 100%;
       margin-left: 0;
-     }
+    }
 
     a {
       @include btn-blue;
@@ -152,70 +146,62 @@
         text-align: center;
       }
     }
-   }
   }
+}
 
+.region-main-prefix ul.action-links {
 
-  .region-main-prefix ul.action-links {
-
-    @include breakpoint(0 375px) {
+  @include breakpoint(0 375px) {
+    width: 100%;
+    li {
+      margin: .5em 0;
       width: 100%;
-        li {
-          margin: .5em 0;
-          width: 100%;
 
-            a {
-              display: block;
-              margin: 0;
-              }
-            }
-        }
-
-  }
-
-
-  .region-content form .form-actions {
-    a, input#edit-submit {
-      @include btn;
-      margin-top: 1em;
-      padding: 8px 16px;
+      a {
+        display: block;
+        margin: 0;
+      }
     }
   }
 
+}
 
-  //LAYOUT
-
-  .one-sidebar.sidebar-second.page-user #main {
-    width: 100%;
-    margin-right: 0;
-    @include breakpoint($standard-screen) {
-     width: 71.46809%;
-    }
+.region-content form .form-actions {
+  a, input#edit-submit {
+    @include btn;
+    margin-top: 1em;
+    padding: 8px 16px;
   }
+}
 
-  .one-sidebar.sidebar-second.page-user #sidebar-second {
-    width: 100%;
-    @include breakpoint($standard-screen) {
-     width: 26.40426%;
-    }
+//LAYOUT
+
+.one-sidebar.sidebar-second.page-user #main {
+  width: 100%;
+  margin-right: 0;
+  @include breakpoint($standard-screen) {
+    width: 71.46809%;
   }
+}
 
-
-  //SIDEBARS
-
-  .page-user #sidebar-first .region, .page-user #sidebar-second .region {
-    padding-top: 0;
+.one-sidebar.sidebar-second.page-user #sidebar-second {
+  width: 100%;
+  @include breakpoint($standard-screen) {
+    width: 26.40426%;
   }
+}
 
+//SIDEBARS
 
-  //BUTTONS
+.page-user #sidebar-first .region, .page-user #sidebar-second .region {
+  padding-top: 0;
+}
 
-  .section-content #main form input.form-submit {
-    margin-right: 1em;
-  }
+//BUTTONS
 
-
-
+.section-content #main form input.form-submit {
+  margin-right: 1em;
+}
 
 /* =============================================================================
    TABLES
@@ -267,14 +253,11 @@ table {
   }
 }
 
-
 //LIST ITEMS
 
 .section-content .block,
 .section-content .content {
-  ul:not(.krumo-node) {
-    margin: 0;
-    padding: 0;
+  ul {
 
     li {
       list-style-image: none;
@@ -282,14 +265,12 @@ table {
       float: left;
       width: 100%;
 
-        &.last {
-          margin-bottom: 0;
-        }
+      &.last {
+        margin-bottom: 0;
+      }
     }
   }
 }
-
-
 
 //page user sections base styles aside from home dashboard view
 
@@ -304,9 +285,9 @@ table {
     //padding: .7em;
   }
 
- form {
+  form {
     input.form-submit, input#edit-submit {
-     // padding: .4em ms(0) !Important;
+      // padding: .4em ms(0) !Important;
     }
   }
 
@@ -318,7 +299,6 @@ table {
     padding: .2em !Important;
   }
 }
-
 
 //saved searches
 
@@ -334,7 +314,6 @@ table {
 .page-user-islandora-saved-searches.section-content #main input.form-submit {
   margin-top: 0;
 }
-
 
 //PLOTIT
 
