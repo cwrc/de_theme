@@ -151,7 +151,9 @@ div.vertical-tabs {
   border-radius: 5px;
   background: #F9F9F9;
   margin: 0;
-
+  ul.vertical-tabs-list {
+    margin: 0;
+  }
   a.token-dialog {
     margin: ms(0);
     display: block;
