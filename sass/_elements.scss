@@ -69,6 +69,11 @@ em{
 a{
   color: $brand2;
   transition: color 0.3s ease-out;
+  &.disabled {
+    color: $shade1;
+    pointer-events: none;
+    text-decoration: none;
+  }
   &:hover{
     text-decoration: none;
     color: darken($brand2, 10%);

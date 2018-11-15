@@ -2583,6 +2583,11 @@ a {
   color: #336699;
   transition: color 0.3s ease-out;
 }
+a.disabled {
+  color: #d2d6de;
+  pointer-events: none;
+  text-decoration: none;
+}
 a:hover {
   text-decoration: none;
   color: #264c73;
