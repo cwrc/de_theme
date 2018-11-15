@@ -70,7 +70,7 @@ a{
   color: $brand2;
   transition: color 0.3s ease-out;
   &.disabled {
-    color: $shade1;
+    color: $shade1 !important;
     pointer-events: none;
     text-decoration: none;
   }

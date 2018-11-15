@@ -893,7 +893,7 @@ a {
   transition: color 0.3s ease-out;
 }
 a.disabled {
-  color: #d2d6de;
+  color: #d2d6de !important;
   pointer-events: none;
   text-decoration: none;
 }
@@ -1685,5 +1685,3 @@ body {
 .cke_editable {
   padding: 1em;
 }
-
-/*# sourceMappingURL=wysiwyg-editor.css.map */

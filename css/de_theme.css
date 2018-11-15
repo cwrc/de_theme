@@ -2584,7 +2584,7 @@ a {
   transition: color 0.3s ease-out;
 }
 a.disabled {
-  color: #d2d6de;
+  color: #d2d6de !important;
   pointer-events: none;
   text-decoration: none;
 }
@@ -12674,5 +12674,3 @@ article.profile .field-name-field-full-name:before {
     margin-left: 0;
   }
 }
-
-/*# sourceMappingURL=de_theme.css.map */
