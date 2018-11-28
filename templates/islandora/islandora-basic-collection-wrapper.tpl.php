@@ -14,6 +14,15 @@
     <hr />
   <?php endif; ?>
   <div class="islandora-basic-collection clearfix">
+    <?php if (!empty($k_labels_mods)) : ?>
+      <div class="mods-k-labels">
+        <?php foreach ($k_labels_mods as $label_url) : ?>
+          <a href="<?php print $label_url; ?>">
+            <?php print $label_url; ?>
+          </a>
+        <?php endforeach; ?>
+      </div>
+    <?php endif; ?>
     <span class="islandora-basic-collection-display-switch">
       <ul class="links inline">
         <?php foreach ($view_links as $link): ?>
