@@ -278,7 +278,7 @@
     float: right;
 
     img {
-      width: 75px;
+      height: 49px;
     }
   }
 }
@@ -308,14 +308,26 @@
   }
 }
 
+.islandora-basic-collection-wrapper {
+  .islandora-basic-collection {
+    .tk-label-items {
+      display: inline-block;
+      position: relative;
+      left: 23%;
+      bottom: -50px;
 
+      a {
+        display: inline-block;
 
-
-
-
-
-
-
-
-
-
+        img {
+          height: 49px;
+        }
+      }
+    }
+    .object-workflow-stamp {
+      float: none;
+      left: 25%;
+      bottom: -50px;
+    }
+  }
+}

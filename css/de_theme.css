@@ -6912,7 +6912,7 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 }
 .page-islandora-search .results .object-workflow-stamp img,
 .islandora-basic-collection .object-workflow-stamp img {
-  width: 75px;
+  height: 49px;
 }
 
 /* =============================================================================
@@ -6933,6 +6933,24 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   padding: 1em 0;
   border-radius: 0;
   margin: 0;
+}
+
+.islandora-basic-collection-wrapper .islandora-basic-collection .tk-label-items {
+  display: inline-block;
+  position: relative;
+  left: 23%;
+  bottom: -50px;
+}
+.islandora-basic-collection-wrapper .islandora-basic-collection .tk-label-items a {
+  display: inline-block;
+}
+.islandora-basic-collection-wrapper .islandora-basic-collection .tk-label-items a img {
+  height: 49px;
+}
+.islandora-basic-collection-wrapper .islandora-basic-collection .object-workflow-stamp {
+  float: none;
+  left: 25%;
+  bottom: -50px;
 }
 
 .left-wrapper.islandora-criticaleditioncontainercmodel a.has-image:hover:before,
