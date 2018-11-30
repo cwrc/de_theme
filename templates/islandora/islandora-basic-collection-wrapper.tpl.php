@@ -19,6 +19,13 @@
         <?php print $tk_labels; ?>
       </div>
     <?php endif; ?>
+
+    <?php if (!empty($wokflow_stamp)): ?>
+      <div class="object-workflow-stamp">
+        <?php print $wokflow_stamp; ?>
+      </div>
+    <?php endif; ?>
+
     <span class="islandora-basic-collection-display-switch">
       <ul class="links inline">
         <?php foreach ($view_links as $link): ?>
