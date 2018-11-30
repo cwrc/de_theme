@@ -274,8 +274,8 @@
   }
 
   ul.list-layout .object-workflow-stamp {
-    display: inline-block;
     float: right;
+    position: static;
 
     img {
       height: 49px;
