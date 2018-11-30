@@ -6949,9 +6949,12 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 }
 .islandora-basic-collection-wrapper .islandora-basic-collection .object-workflow-stamp {
   position: relative;
-  float: none;
   left: 25%;
   bottom: -50px;
+  display: inline-block;
+}
+.islandora-basic-collection-wrapper .islandora-basic-collection .object-workflow-stamp img {
+  height: 49px;
 }
 
 .left-wrapper.islandora-criticaleditioncontainercmodel a.has-image:hover:before,

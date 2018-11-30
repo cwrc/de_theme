@@ -326,9 +326,13 @@
     }
     .object-workflow-stamp {
       position: relative;
-      float: none;
       left: 25%;
       bottom: -50px;
+      display: inline-block;
+
+      img {
+        height: 49px;
+      }
     }
   }
 }
