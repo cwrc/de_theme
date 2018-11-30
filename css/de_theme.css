@@ -6905,13 +6905,13 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   left: -100%;
   border-radius: 3px;
 }
-.page-islandora-search .results .object-workflow-stamp,
-.islandora-basic-collection .object-workflow-stamp {
+.page-islandora-search .results ul.list-layout .object-workflow-stamp,
+.islandora-basic-collection ul.list-layout .object-workflow-stamp {
   display: inline-block;
   float: right;
 }
-.page-islandora-search .results .object-workflow-stamp img,
-.islandora-basic-collection .object-workflow-stamp img {
+.page-islandora-search .results ul.list-layout .object-workflow-stamp img,
+.islandora-basic-collection ul.list-layout .object-workflow-stamp img {
   height: 49px;
 }
 
