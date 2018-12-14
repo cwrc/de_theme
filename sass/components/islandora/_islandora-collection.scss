@@ -315,6 +315,7 @@
       position: relative;
       left: 23%;
       bottom: -50px;
+      z-index: 10;
 
       a {
         display: inline-block;
@@ -332,6 +333,12 @@
 
       img {
         height: 49px;
+      }
+    }
+
+    .cwrc-search-teaser-list {
+      .tk-label-items {
+        bottom: 0;
       }
     }
   }
