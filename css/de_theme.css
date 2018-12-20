@@ -693,7 +693,7 @@ icons with borders
 
    %icon-media-text {
     @include icon;
-    content: "\e90b";
+    content: "\e93b";
    }
 
    %icon-media-audio{
@@ -1546,7 +1546,6 @@ article.profile .field-name-field-full-name:before, #block-user-online h2:before
   white-space: nowrap;
   direction: ltr;
   margin-right: .35em;
-  content: "\e90b";
   font-size: 1em;
   margin-right: .5em;
   height: 1.2em;
@@ -7055,7 +7054,7 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 
 .left-wrapper.islandora-sp-videocmodel a.has-image:hover:before,
 .left-wrapper.islandora-sp-videocmodel a .no-image .no-image-icon:before {
-  content: '\e923';
+  content: '\e910';
 }
 
 .left-wrapper.cwrc-documentcmodel a.has-image:hover:before,
@@ -12709,3 +12708,5 @@ article.profile .field-name-field-full-name:before {
     margin-left: 0;
   }
 }
+
+/*# sourceMappingURL=de_theme.css.map */

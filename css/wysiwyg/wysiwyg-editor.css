@@ -589,7 +589,7 @@ icons with borders
 
    %icon-media-text {
     @include icon;
-    content: "\e90b";
+    content: "\e93b";
    }
 
    %icon-media-audio{
@@ -1356,7 +1356,7 @@ icons with borders
 
    %icon-media-text {
     @include icon;
-    content: "\e90b";
+    content: "\e93b";
    }
 
    %icon-media-audio{
@@ -1685,3 +1685,5 @@ body {
 .cke_editable {
   padding: 1em;
 }
+
+/*# sourceMappingURL=wysiwyg-editor.css.map */

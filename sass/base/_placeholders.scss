@@ -159,7 +159,7 @@ icons with borders
 
    %icon-media-text {
     @include icon;
-    content: "\e90b";
+    content: "\e93b";
    }
 
    %icon-media-audio{
@@ -718,7 +718,7 @@ icons with borders
 
   %icon-file-empty{
     @include icon;
-    content: "\e90b";
+    //content: "\e93b";
     @include default-icomoon-icon-styles;
   }
 
