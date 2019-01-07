@@ -1,6 +1,5 @@
 
 
-
 //Critical Edition Container Content Model
 
   .left-wrapper.islandora-criticaleditioncontainercmodel a.has-image:hover,
@@ -91,7 +90,7 @@
   .left-wrapper.islandora-pagecmodel a.has-image:hover,
   .left-wrapper.islandora-pagecmodel a .no-image .no-image-icon {
     &:before {
-      content:'\e90b';
+      content:'\e93';
     }
   }
 
@@ -178,7 +177,7 @@
   .left-wrapper.islandora-sp-videocmodel a .no-image .no-image-icon {
     &:before {
       //@extend %icon-file-play;
-      content:'\e910';
+      content:'\e948';
     }
   }
 
