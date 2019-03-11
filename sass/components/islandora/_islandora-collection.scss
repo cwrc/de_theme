@@ -171,6 +171,14 @@
 
 
 //IMAGES / ICONS
+  .cwrc-search-teaser-list .right-wrapper {
+    float:left;
+	width: 100%;
+	@include breakpoint(500px) {
+	  float: right;
+	  width: auto;
+	}
+  }
 
   /*.cwrc-search-teaser-grid .left-wrapper a,
   .cwrc-search-teaser-list .left-wrapper a,
@@ -274,9 +282,11 @@
   }
 
   ul.list-layout .object-workflow-stamp {
-    float: right;
+    float: none;
     position: static;
-
+	@include breakpoint(500px) {
+      float: right;
+	}
     img {
       height: 49px;
     }
@@ -310,16 +320,24 @@
 
 .islandora-basic-collection-wrapper {
   .islandora-basic-collection {
+	> .right-wrapper {
+	  float: right;
+	  > div {
+		left: auto;
+	  }
+	}
     .tk-label-items {
       display: inline-block;
       position: relative;
-      left: 23%;
+      left: 0;
       bottom: -50px;
       z-index: 10;
-
+	  @include breakpoint(500px) {
+		left: 23%;
+	  }
       a {
         display: inline-block;
-
+		margin-left: 3px;
         img {
           height: 49px;
         }
@@ -341,5 +359,23 @@
         bottom: 0;
       }
     }
+  }
+}
+
+#block-cwrc-projects-project-tk-stamp-labels {
+  border: 0;
+  display: flex;
+  justify-content: flex-end;
+  .tk-label-items a {
+	margin-left: 5px;
+	img {
+	  height: 49px;
+	}
+  }
+  .object-workflow-stamp {
+	margin-left: 5px;
+	.wokflow-stamp img {
+		height: 49px;
+	}
   }
 }

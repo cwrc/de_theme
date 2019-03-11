@@ -14,18 +14,6 @@
     <hr />
   <?php endif; ?>
   <div class="islandora-basic-collection clearfix">
-    <?php if (!empty($tk_labels)): ?>
-      <div class="tk-label-items">
-        <?php print $tk_labels; ?>
-      </div>
-    <?php endif; ?>
-
-    <?php if (!empty($wokflow_stamp)): ?>
-      <div class="object-workflow-stamp">
-        <?php print $wokflow_stamp; ?>
-      </div>
-    <?php endif; ?>
-
     <span class="islandora-basic-collection-display-switch">
       <ul class="links inline">
         <?php foreach ($view_links as $link): ?>
@@ -35,6 +23,20 @@
         <?php endforeach ?>
       </ul>
     </span>
+    <div class="right-wrapper">
+      <?php if (!empty($tk_labels)): ?>
+        <div class="tk-label-items">
+          <?php print $tk_labels; ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($wokflow_stamp)): ?>
+        <div class="object-workflow-stamp">
+          <?php print $wokflow_stamp; ?>
+        </div>
+      <?php endif; ?>
+    </div>
+
     <?php print $collection_content; ?>
     <?php print $collection_pager; ?>
   </div>
