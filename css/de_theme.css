@@ -6906,12 +6906,12 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 }
 .page-islandora-search .results ul.list-layout .object-workflow-stamp,
 .islandora-basic-collection ul.list-layout .object-workflow-stamp {
-  float: right;
+  float: none;
   position: static;
 }
 .page-islandora-search .results ul.list-layout .object-workflow-stamp img,
 .islandora-basic-collection ul.list-layout .object-workflow-stamp img {
-  height: 49px;
+  height: 35px;
 }
 
 /* =============================================================================
@@ -6934,18 +6934,48 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   margin: 0;
 }
 
+.page-islandora-object-cwrcmods-tk .islandora-basic-collection > .right-wrapper {
+  float: right;
+  padding-right: 15px;
+}
+.page-islandora-object-cwrcmods-tk .islandora-basic-collection > .right-wrapper > div {
+  left: auto;
+}
+.page-islandora-object-cwrcmods-tk .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper {
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+.page-islandora-object-cwrcmods-tk .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper .label {
+  float: left;
+  width: 100%;
+}
+@media (min-width: 670px) {
+  .page-islandora-object-cwrcmods-tk .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper .label {
+    width: auto;
+  }
+}
+@media (min-width: 670px) {
+  .page-islandora-object-cwrcmods-tk .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper {
+    text-align: right;
+    float: right;
+    width: 89%;
+  }
+}
+
 .islandora-basic-collection-wrapper .islandora-basic-collection .tk-label-items {
   display: inline-block;
   position: relative;
-  left: 23%;
+  margin-right: 5px;
   bottom: -50px;
   z-index: 10;
 }
 .islandora-basic-collection-wrapper .islandora-basic-collection .tk-label-items a {
   display: inline-block;
+  margin-left: 3px;
 }
 .islandora-basic-collection-wrapper .islandora-basic-collection .tk-label-items a img {
-  height: 49px;
+  height: 33px;
 }
 .islandora-basic-collection-wrapper .islandora-basic-collection .object-workflow-stamp {
   position: relative;
@@ -6954,10 +6984,26 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   display: inline-block;
 }
 .islandora-basic-collection-wrapper .islandora-basic-collection .object-workflow-stamp img {
-  height: 49px;
+  height: 35px;
 }
 .islandora-basic-collection-wrapper .islandora-basic-collection .cwrc-search-teaser-list .tk-label-items {
   bottom: 0;
+}
+
+#block-cwrc-projects-project-tk-stamp-labels {
+  border: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+#block-cwrc-projects-project-tk-stamp-labels .tk-label-items a {
+  margin-left: 5px;
+}
+#block-cwrc-projects-project-tk-stamp-labels .tk-label-items a img {
+  height: 35px;
+}
+#block-cwrc-projects-project-tk-stamp-labels .wokflow-stamp img {
+  height: 35px;
+  margin-left: 5px;
 }
 
 .left-wrapper.islandora-criticaleditioncontainercmodel a.has-image:hover:before,
