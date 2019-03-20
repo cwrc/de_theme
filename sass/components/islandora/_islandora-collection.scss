@@ -171,14 +171,6 @@
 
 
 //IMAGES / ICONS
-  .cwrc-search-teaser-list .right-wrapper {
-    float:left;
-	width: 100%;
-	@include breakpoint(500px) {
-	  float: right;
-	  width: auto;
-	}
-  }
 
   /*.cwrc-search-teaser-grid .left-wrapper a,
   .cwrc-search-teaser-list .left-wrapper a,
@@ -285,10 +277,10 @@
     float: none;
     position: static;
 	@include breakpoint(500px) {
-      float: right;
+      
 	}
     img {
-      height: 49px;
+      height: 35px;
     }
   }
 }
@@ -318,28 +310,60 @@
   }
 }
 
+.page-islandora-object-cwrcmods-tk {
+  .islandora-basic-collection {
+    > .right-wrapper {
+      float: right;
+      padding-right:15px;
+      > div {
+      left: auto;
+      }
+      
+    }
+
+    .cwrc-search-teaser-list .right-wrapper {
+	  .label {
+        float: left;
+		width: 100%;
+		@include breakpoint(670px) {
+		  width: auto;
+		}
+      }
+      float:left;
+      width: 100%;
+      text-align: left;
+      @include breakpoint(670px) {
+        text-align: right;
+        float: right;
+        width: 89%;
+      }
+    }
+  }
+}
+
 .islandora-basic-collection-wrapper {
   .islandora-basic-collection {
-	> .right-wrapper {
-	  float: right;
-	  > div {
-		left: auto;
-	  }
-	}
+	// > .right-wrapper {
+	//   float: right;
+	//   > div {
+	// 	left: auto;
+	//   }
+	// }
     .tk-label-items {
       display: inline-block;
       position: relative;
-      left: 0;
+      margin-right: 5px;
+      // left: 0;
       bottom: -50px;
       z-index: 10;
-	  @include breakpoint(500px) {
-		left: 23%;
-	  }
+	 //  @include breakpoint(500px) {
+		// left: 23%;
+	 //  }
       a {
         display: inline-block;
 		margin-left: 3px;
         img {
-          height: 49px;
+          height: 33px;
         }
       }
     }
@@ -350,7 +374,7 @@
       display: inline-block;
 
       img {
-        height: 49px;
+        height: 35px;
       }
     }
 
@@ -364,18 +388,21 @@
 
 #block-cwrc-projects-project-tk-stamp-labels {
   border: 0;
+
   display: flex;
   justify-content: flex-end;
+  
   .tk-label-items a {
-	margin-left: 5px;
-	img {
-	  height: 49px;
-	}
+    margin-left: 5px;
+      img {
+        height: 35px;
+      }
   }
-  .object-workflow-stamp {
-	margin-left: 5px;
-	.wokflow-stamp img {
-		height: 49px;
-	}
+
+    
+  .wokflow-stamp img {
+    height: 35px;
+    margin-left: 5px;
   }
+  
 }
