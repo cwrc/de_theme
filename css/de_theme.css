@@ -6906,7 +6906,7 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 }
 .page-islandora-search .results ul.list-layout .object-workflow-stamp,
 .islandora-basic-collection ul.list-layout .object-workflow-stamp {
-  float: none;
+  float: right;
   position: static;
 }
 .page-islandora-search .results ul.list-layout .object-workflow-stamp img,
