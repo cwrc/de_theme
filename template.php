@@ -334,6 +334,14 @@ function de_theme_menu_local_task(&$variables) {
 
   $options = $link['localized_options'] + array('attributes' => array('class' => array()));
 
+  drupal_add_js(drupal_get_path('module', 'islandora_object_lock') . '/js/islandora_menu_item_lock.js');
+  if ($link['path'] == 'islandora/object/%/lock') {
+    $options['attributes']['class'][] = 'lock';
+  }
+  else if ($link['path'] == 'islandora/object/%/unlock') {
+    $options['attributes']['class'][] = 'unlock';
+  }
+
   if (!empty($submenuhtml)) {
     $options['attributes']['class'][] = 'dropdown-toggle';
     $options['attributes']['class'][] = 'hover-menu';

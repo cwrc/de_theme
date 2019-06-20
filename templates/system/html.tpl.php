@@ -91,7 +91,7 @@ $theme_path = drupal_get_path('theme', 'de_theme');
 <link rel="icon" type="image/png" href="/<?php print $theme_path; ?>/img/favicons/favicon-96x96.png" sizes="96x96">
 <link rel="icon" type="image/png" href="/<?php print $theme_path; ?>/img/favicons/android-chrome-192x192.png" sizes="192x192">
 <link rel="icon" type="image/png" href="/<?php print $theme_path; ?>/img/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/<?php print $theme_path; ?>/img/favicons/manifest.json">
+<link rel="manifest" crossorigin="use-credentials" href="/<?php print $theme_path; ?>/img/favicons/manifest.json">
 <link rel="mask-icon" href="/<?php print $theme_path; ?>/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
 <link rel="shortcut icon" href="/<?php print $theme_path; ?>/img/favicons/favicon.ico">
 <meta name="msapplication-TileColor" content="#da532c">

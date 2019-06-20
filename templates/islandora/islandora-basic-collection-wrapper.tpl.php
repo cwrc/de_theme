@@ -23,6 +23,20 @@
         <?php endforeach ?>
       </ul>
     </span>
+    <div class="right-wrapper collection-labels">
+      <?php if (!empty($tk_labels)): ?>
+        <div class="tk-label-items">
+          <?php print $tk_labels; ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($wokflow_stamp)): ?>
+        <div class="object-workflow-stamp">
+          <?php print $wokflow_stamp; ?>
+        </div>
+      <?php endif; ?>
+    </div>
+
     <?php print $collection_content; ?>
     <?php print $collection_pager; ?>
   </div>
