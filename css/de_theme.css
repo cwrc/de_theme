@@ -693,7 +693,7 @@ icons with borders
 
    %icon-media-text {
     @include icon;
-    content: "\e90b";
+    content: "\e93b";
    }
 
    %icon-media-audio{
@@ -1546,7 +1546,6 @@ article.profile .field-name-field-full-name:before, #block-user-online h2:before
   white-space: nowrap;
   direction: ltr;
   margin-right: .35em;
-  content: "\e90b";
   font-size: 1em;
   margin-right: .5em;
   height: 1.2em;
@@ -2583,6 +2582,11 @@ a {
   color: #336699;
   transition: color 0.3s ease-out;
 }
+a.disabled {
+  color: #d2d6de !important;
+  pointer-events: none;
+  text-decoration: none;
+}
 a:hover {
   text-decoration: none;
   color: #264c73;
@@ -3191,6 +3195,9 @@ fieldset.collapsible.form-wrapper legend {
 div.vertical-tabs {
   border-radius: 5px;
   background: #F9F9F9;
+  margin: 0;
+}
+div.vertical-tabs ul.vertical-tabs-list {
   margin: 0;
 }
 div.vertical-tabs a.token-dialog {
@@ -6897,6 +6904,15 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   left: -100%;
   border-radius: 3px;
 }
+.page-islandora-search .results ul.list-layout .object-workflow-stamp,
+.islandora-basic-collection ul.list-layout .object-workflow-stamp {
+  float: right;
+  position: static;
+}
+.page-islandora-search .results ul.list-layout .object-workflow-stamp img,
+.islandora-basic-collection ul.list-layout .object-workflow-stamp img {
+  height: 35px;
+}
 
 /* =============================================================================
     List View
@@ -6916,6 +6932,73 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   padding: 1em 0;
   border-radius: 0;
   margin: 0;
+}
+
+.page-islandora-object .islandora-basic-collection > .right-wrapper {
+  float: right;
+  padding-right: 15px;
+}
+.page-islandora-object .islandora-basic-collection > .right-wrapper > div {
+  left: auto;
+}
+.page-islandora-object .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper {
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+.page-islandora-object .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper .label {
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+@media (min-width: 670px) {
+  .page-islandora-object .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper {
+    float: right;
+    width: 89%;
+  }
+}
+
+.islandora-basic-collection-wrapper .islandora-basic-collection .tk-label-items {
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+  bottom: -50px;
+  z-index: 10;
+}
+.islandora-basic-collection-wrapper .islandora-basic-collection .tk-label-items a {
+  display: inline-block;
+  margin-left: 3px;
+}
+.islandora-basic-collection-wrapper .islandora-basic-collection .tk-label-items a img {
+  height: 33px;
+}
+.islandora-basic-collection-wrapper .islandora-basic-collection .object-workflow-stamp {
+  position: relative;
+  left: 25%;
+  bottom: -50px;
+  display: inline-block;
+}
+.islandora-basic-collection-wrapper .islandora-basic-collection .object-workflow-stamp img {
+  height: 35px;
+}
+.islandora-basic-collection-wrapper .islandora-basic-collection .cwrc-search-teaser-list .tk-label-items {
+  bottom: 0;
+}
+
+#block-cwrc-projects-project-tk-stamp-labels {
+  border: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+#block-cwrc-projects-project-tk-stamp-labels .tk-label-items a {
+  margin-left: 5px;
+}
+#block-cwrc-projects-project-tk-stamp-labels .tk-label-items a img {
+  height: 35px;
+}
+#block-cwrc-projects-project-tk-stamp-labels .wokflow-stamp img {
+  height: 35px;
+  margin-left: 5px;
 }
 
 .left-wrapper.islandora-criticaleditioncontainercmodel a.has-image:hover:before,
@@ -6965,7 +7048,7 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 
 .left-wrapper.islandora-pagecmodel a.has-image:hover:before,
 .left-wrapper.islandora-pagecmodel a .no-image .no-image-icon:before {
-  content: '\e90b';
+  content: '\e93';
 }
 
 .left-wrapper.islandora-compoundcmodel a.has-image:hover:before,
@@ -7012,7 +7095,7 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 
 .left-wrapper.islandora-sp-videocmodel a.has-image:hover:before,
 .left-wrapper.islandora-sp-videocmodel a .no-image .no-image-icon:before {
-  content: '\e923';
+  content: '\e948';
 }
 
 .left-wrapper.cwrc-documentcmodel a.has-image:hover:before,

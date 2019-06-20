@@ -272,6 +272,17 @@
       }
     }
   }
+
+  ul.list-layout .object-workflow-stamp {
+    float: right;
+    position: static;
+	@include breakpoint(500px) {
+      
+	}
+    img {
+      height: 35px;
+    }
+  }
 }
 
 
@@ -299,14 +310,96 @@
   }
 }
 
+.page-islandora-object {
+  .islandora-basic-collection {
+    > .right-wrapper {
+      float: right;
+      padding-right:15px;
+      > div {
+      left: auto;
+      }
+      
+    }
 
+    .cwrc-search-teaser-list .right-wrapper {
+	  .label {
+        float: left;
+		width: 100%;
+text-align: left;
+      }
+      float:left;
+      width: 100%;
+      text-align: left;
+      @include breakpoint(670px) {
+        float: right;
+        width: 89%;
+      }
+    }
+  }
+}
 
+.islandora-basic-collection-wrapper {
+  .islandora-basic-collection {
+	// > .right-wrapper {
+	//   float: right;
+	//   > div {
+	// 	left: auto;
+	//   }
+	// }
+    .tk-label-items {
+      display: inline-block;
+      position: relative;
+      margin-right: 5px;
+      // left: 0;
+      bottom: -50px;
+      z-index: 10;
+	 //  @include breakpoint(500px) {
+		// left: 23%;
+	 //  }
+      a {
+        display: inline-block;
+		margin-left: 3px;
+        img {
+          height: 33px;
+        }
+      }
+    }
+    .object-workflow-stamp {
+      position: relative;
+      left: 25%;
+      bottom: -50px;
+      display: inline-block;
 
+      img {
+        height: 35px;
+      }
+    }
 
+    .cwrc-search-teaser-list {
+      .tk-label-items {
+        bottom: 0;
+      }
+    }
+  }
+}
 
+#block-cwrc-projects-project-tk-stamp-labels {
+  border: 0;
 
+  display: flex;
+  justify-content: flex-end;
+  
+  .tk-label-items a {
+    margin-left: 5px;
+      img {
+        height: 35px;
+      }
+  }
 
-
-
-
-
+    
+  .wokflow-stamp img {
+    height: 35px;
+    margin-left: 5px;
+  }
+  
+}

@@ -589,7 +589,7 @@ icons with borders
 
    %icon-media-text {
     @include icon;
-    content: "\e90b";
+    content: "\e93b";
    }
 
    %icon-media-audio{
@@ -891,6 +891,11 @@ em {
 a {
   color: #336699;
   transition: color 0.3s ease-out;
+}
+a.disabled {
+  color: #d2d6de !important;
+  pointer-events: none;
+  text-decoration: none;
 }
 a:hover {
   text-decoration: none;
@@ -1351,7 +1356,7 @@ icons with borders
 
    %icon-media-text {
     @include icon;
-    content: "\e90b";
+    content: "\e93b";
    }
 
    %icon-media-audio{
