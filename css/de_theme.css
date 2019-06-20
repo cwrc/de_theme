@@ -6949,10 +6949,22 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 .page-islandora-object .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper .label {
   float: left;
   width: 100%;
+<<<<<<< HEAD
   text-align: left;
 }
 @media (min-width: 670px) {
   .page-islandora-object .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper {
+=======
+}
+@media (min-width: 670px) {
+  .page-islandora-object .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper .label {
+    width: auto;
+  }
+}
+@media (min-width: 670px) {
+  .page-islandora-object .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper {
+    text-align: right;
+>>>>>>> 17a7f1c17e79e04b31038da150c94a58e11c9452
     float: right;
     width: 89%;
   }

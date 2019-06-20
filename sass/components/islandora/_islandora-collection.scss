@@ -326,11 +326,15 @@
         float: left;
 		width: 100%;
 text-align: left;
+		@include breakpoint(670px) {
+		  width: auto;
+		}
       }
       float:left;
       width: 100%;
       text-align: left;
       @include breakpoint(670px) {
+        text-align: right;
         float: right;
         width: 89%;
       }
