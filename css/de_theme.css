@@ -6904,13 +6904,12 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   left: -100%;
   border-radius: 3px;
 }
-.page-islandora-search .results ul.list-layout .object-workflow-stamp,
-.islandora-basic-collection ul.list-layout .object-workflow-stamp {
-  float: right;
+.page-islandora-search .results ul.list-layout .right-wrapper,
+.islandora-basic-collection ul.list-layout .right-wrapper {
   position: static;
 }
-.page-islandora-search .results ul.list-layout .object-workflow-stamp img,
-.islandora-basic-collection ul.list-layout .object-workflow-stamp img {
+.page-islandora-search .results ul.list-layout .right-wrapper img,
+.islandora-basic-collection ul.list-layout .right-wrapper img {
   height: 35px;
 }
 
@@ -6941,60 +6940,49 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 .page-islandora-object .islandora-basic-collection > .right-wrapper > div {
   left: auto;
 }
-.page-islandora-object .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper {
-  float: left;
-  width: 100%;
-  text-align: left;
-}
-.page-islandora-object .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper .label {
-  float: left;
-  width: 100%;
-<<<<<<< HEAD
-  text-align: left;
-}
-@media (min-width: 670px) {
-  .page-islandora-object .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper {
-=======
-}
-@media (min-width: 670px) {
-  .page-islandora-object .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper .label {
-    width: auto;
-  }
-}
-@media (min-width: 670px) {
-  .page-islandora-object .islandora-basic-collection .cwrc-search-teaser-list .right-wrapper {
-    text-align: right;
->>>>>>> 17a7f1c17e79e04b31038da150c94a58e11c9452
-    float: right;
-    width: 89%;
-  }
-}
 
-.islandora-basic-collection-wrapper .islandora-basic-collection .tk-label-items {
+.islandora-basic-collection-wrapper .tk-label-items, .page-islandora-search .tk-label-items {
   display: inline-block;
   position: relative;
   margin-right: 5px;
   bottom: -50px;
   z-index: 10;
 }
-.islandora-basic-collection-wrapper .islandora-basic-collection .tk-label-items a {
+.islandora-basic-collection-wrapper .tk-label-items a, .page-islandora-search .tk-label-items a {
   display: inline-block;
-  margin-left: 3px;
+  margin-left: 6px;
 }
-.islandora-basic-collection-wrapper .islandora-basic-collection .tk-label-items a img {
+.islandora-basic-collection-wrapper .tk-label-items a img, .page-islandora-search .tk-label-items a img {
   height: 33px;
 }
-.islandora-basic-collection-wrapper .islandora-basic-collection .object-workflow-stamp {
+.islandora-basic-collection-wrapper .object-workflow-stamp, .page-islandora-search .object-workflow-stamp {
   position: relative;
   left: 25%;
   bottom: -50px;
+  margin-right: 5px;
   display: inline-block;
 }
-.islandora-basic-collection-wrapper .islandora-basic-collection .object-workflow-stamp img {
+.islandora-basic-collection-wrapper .object-workflow-stamp img, .page-islandora-search .object-workflow-stamp img {
   height: 35px;
 }
-.islandora-basic-collection-wrapper .islandora-basic-collection .cwrc-search-teaser-list .tk-label-items {
+.islandora-basic-collection-wrapper .cwrc-search-teaser-list .right-wrapper, .page-islandora-search .cwrc-search-teaser-list .right-wrapper {
+  text-align: left;
+}
+.islandora-basic-collection-wrapper .cwrc-search-teaser-list .right-wrapper .label, .page-islandora-search .cwrc-search-teaser-list .right-wrapper .label {
+  text-align: left;
+}
+@media (min-width: 670px) {
+  .islandora-basic-collection-wrapper .cwrc-search-teaser-list .right-wrapper .label, .page-islandora-search .cwrc-search-teaser-list .right-wrapper .label {
+    width: auto;
+  }
+}
+.islandora-basic-collection-wrapper .cwrc-search-teaser-list .icon-wrapper, .page-islandora-search .cwrc-search-teaser-list .icon-wrapper {
+  float: right;
+}
+.islandora-basic-collection-wrapper .cwrc-search-teaser-list .icon-wrapper .tk-label-items, .islandora-basic-collection-wrapper .cwrc-search-teaser-list .icon-wrapper .object-workflow-stamp, .page-islandora-search .cwrc-search-teaser-list .icon-wrapper .tk-label-items, .page-islandora-search .cwrc-search-teaser-list .icon-wrapper .object-workflow-stamp {
+  display: inline-block;
   bottom: 0;
+  left: 0;
 }
 
 #block-cwrc-projects-project-tk-stamp-labels {

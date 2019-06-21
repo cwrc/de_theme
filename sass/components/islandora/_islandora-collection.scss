@@ -2,10 +2,9 @@
     Islandora Colection
    ========================================================================== */
 
-
 //GENERAL
 
-.page-islandora-object.page-islandora-object-islandoraroot .section-content  ul.pager {
+.page-islandora-object.page-islandora-object-islandoraroot .section-content ul.pager {
   float: left;
   width: 100%;
 }
@@ -19,7 +18,6 @@
 .page-islandora-object .islandora div.form-item.form-type-select.form-item-sort {
   width: auto;
 }
-
 
 /* =============================================================================
     Sort
@@ -56,7 +54,6 @@
   margin-left: ms(0);
 }
 
-
 /* =============================================================================
     Object Items
    ========================================================================== */
@@ -72,8 +69,7 @@
   top: -1em;
   position: relative;
 
-
-//BOXES
+  //BOXES
 
   ul.list-layout li,
   ul.grid-layout li {
@@ -96,87 +92,85 @@
 
   ul.grid-layout li:nth-child(2n+2) {
     @include breakpoint(420px) {
-     margin-right: 0;
-   }
+      margin-right: 0;
+    }
   }
 
+  //WITHIN BOX
 
-//WITHIN BOX
+  .top-wrapper {
+    position: relative;
+  }
 
-.top-wrapper {
-  position: relative;
-}
-
-.right-wrapper {
-  .project-info {
-    a {
-      img {
-        width: auto;
-        height: 30px;
-        margin-top: .2em;
-        float: left;
-        margin-right: 1em;
+  .right-wrapper {
+    .project-info {
+      a {
+        img {
+          width: auto;
+          height: 30px;
+          margin-top: .2em;
+          float: left;
+          margin-right: 1em;
+        }
       }
     }
   }
-}
 
-.left-wrapper {
-  width: 45px;
-  height: 45px;
-  margin-right: 1em;
-  float: left;
-  margin-bottom: .3em;
-  @include breakpoint(1120px) {
-    width: 64px;
-    height: 64px;
-  }
-}
-
-.creation-info {
-  font-weight: $bold;
-  font-size: .8em;
-  margin-bottom: .5em;
-
-  .creator, .date {
-    line-height: 14px;
+  .left-wrapper {
+    width: 45px;
+    height: 45px;
+    margin-right: 1em;
+    float: left;
+    margin-bottom: .3em;
+    @include breakpoint(1120px) {
+      width: 64px;
+      height: 64px;
+    }
   }
 
-  .date {
-    display: inline-block;
+  .creation-info {
+    font-weight: $bold;
+    font-size: .8em;
+    margin-bottom: .5em;
+
+    .creator, .date {
+      line-height: 14px;
+    }
+
+    .date {
+      display: inline-block;
+    }
   }
-}
 
-.summary {
-  text-indent: 0;
-  padding-left: 3.9em;
-  @include breakpoint(1120px) {
-    padding-left: 4.9em;
+  .summary {
+    text-indent: 0;
+    padding-left: 3.9em;
+    @include breakpoint(1120px) {
+      padding-left: 4.9em;
+    }
   }
-}
 
+  //CAPTION / TITLE
+  .top-wrapper .right-wrapper .label,
+  .islandora-basic-collection .right-wrapper .label {
+    padding: 0;
+    margin-bottom: .2em;
 
-//CAPTION / TITLE
-.top-wrapper .right-wrapper .label,
-.islandora-basic-collection .right-wrapper .label {
-  padding: 0;
-  margin-bottom: .2em;
-
-  a {
-    text-decoration: none;
-    font-weight: $xbold;
-    word-wrap: break-word;
+    a {
+      text-decoration: none;
+      font-weight: $xbold;
+      word-wrap: break-word;
+    }
   }
-}
 
-
-//IMAGES / ICONS
+  //IMAGES / ICONS
 
   /*.cwrc-search-teaser-grid .left-wrapper a,
   .cwrc-search-teaser-list .left-wrapper a,
-  .islandora-basic-collection .left-wrapper*/ a  {
+  .islandora-basic-collection .left-wrapper*/
+  a {
 
-    .no-image{
+    .no-image {
       float: left;
       width: 100%;
       height: 100%;
@@ -184,46 +178,47 @@
       border-radius: 5px;
       @extend %border-radius-small;
 
+      &:before {
+        content: '' !important;
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: 0em;
+      }
+
+      .no-image-icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+
         &:before {
-          content: '' !important;
-          display: inline-block;
-          height: 100%;
-          vertical-align: middle;
-          margin-right: 0em;
-        }
-
-        .no-image-icon {
-          display: inline-block;
-          vertical-align: middle;
-          width: 100%;
-          color: #fff;
+          @extend %icon-file-empty;
+          margin-right: 0 !important;
           text-align: center;
-
-          &:before {
-            @extend %icon-file-empty;
-            margin-right: 0 !important;
-            text-align: center;
-            float: none !Important;
-            margin: 0 auto;
-            display: block;
-            width: 100%;
-            font-size: 1.3em;
-            top: 3px;
-            line-height: normal;
-          }
+          float: none !Important;
+          margin: 0 auto;
+          display: block;
+          width: 100%;
+          font-size: 1.3em;
+          top: 3px;
+          line-height: normal;
         }
       }
+    }
 
     img {
       display: block;
     }
   }
 
-//if it has an img
+  //if it has an img
 
   /*.cwrc-search-teaser-grid .left-wrapper,
   .cwrc-search-teaser-list .left-wrapper,
-  .islandora-basic-collection */.left-wrapper {
+  .islandora-basic-collection */
+  .left-wrapper {
     background: #fff !important;
     border: 1px solid $shade3;
     border-radius: 5px;
@@ -236,7 +231,10 @@
       position: relative;
       display: block;
       transition: all 0.3s ease-in;
-      &.has-image:before {content: none; transition: all 0.3s ease-in;}
+      &.has-image:before {
+        content: none;
+        transition: all 0.3s ease-in;
+      }
       &.has-image:hover:before {
         @extend %icon-file-empty;
         float: right;
@@ -273,19 +271,17 @@
     }
   }
 
-  ul.list-layout .object-workflow-stamp {
-    float: right;
+  ul.list-layout .right-wrapper {
+
     position: static;
-	@include breakpoint(500px) {
-      
-	}
+    @include breakpoint(500px) {
+
+    }
     img {
       height: 35px;
     }
   }
 }
-
-
 
 /* =============================================================================
     List View
@@ -314,42 +310,20 @@
   .islandora-basic-collection {
     > .right-wrapper {
       float: right;
-      padding-right:15px;
+      padding-right: 15px;
       > div {
-      left: auto;
+        left: auto;
       }
-      
-    }
 
-    .cwrc-search-teaser-list .right-wrapper {
-	  .label {
-        float: left;
-		width: 100%;
-text-align: left;
-		@include breakpoint(670px) {
-		  width: auto;
-		}
-      }
-      float:left;
-      width: 100%;
-      text-align: left;
-      @include breakpoint(670px) {
-        text-align: right;
-        float: right;
-        width: 89%;
-      }
     }
   }
 }
 
-.islandora-basic-collection-wrapper {
-  .islandora-basic-collection {
-	// > .right-wrapper {
-	//   float: right;
-	//   > div {
-	// 	left: auto;
-	//   }
-	// }
+
+
+.islandora-basic-collection-wrapper, .page-islandora-search {
+  
+  
     .tk-label-items {
       display: inline-block;
       position: relative;
@@ -357,12 +331,12 @@ text-align: left;
       // left: 0;
       bottom: -50px;
       z-index: 10;
-	 //  @include breakpoint(500px) {
-		// left: 23%;
-	 //  }
+      //  @include breakpoint(500px) {
+      // left: 23%;
+      //  }
       a {
         display: inline-block;
-		margin-left: 3px;
+        margin-left: 6px;
         img {
           height: 33px;
         }
@@ -372,6 +346,7 @@ text-align: left;
       position: relative;
       left: 25%;
       bottom: -50px;
+      margin-right: 5px;
       display: inline-block;
 
       img {
@@ -380,11 +355,27 @@ text-align: left;
     }
 
     .cwrc-search-teaser-list {
-      .tk-label-items {
-        bottom: 0;
+    
+      .right-wrapper {
+        text-align: left;
+        .label {
+
+          text-align: left;
+          @include breakpoint(670px) {
+            width: auto;
+          }
+        } 
+      }
+      .icon-wrapper {
+        float: right;
+        .tk-label-items, .object-workflow-stamp {
+          display: inline-block;
+          bottom: 0;
+          left: 0;
+        }
       }
     }
-  }
+  
 }
 
 #block-cwrc-projects-project-tk-stamp-labels {
@@ -392,18 +383,17 @@ text-align: left;
 
   display: flex;
   justify-content: flex-end;
-  
+
   .tk-label-items a {
     margin-left: 5px;
-      img {
-        height: 35px;
-      }
+    img {
+      height: 35px;
+    }
   }
 
-    
   .wokflow-stamp img {
     height: 35px;
     margin-left: 5px;
   }
-  
+
 }
