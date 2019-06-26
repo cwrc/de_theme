@@ -3193,6 +3193,9 @@ div.vertical-tabs {
   background: #F9F9F9;
   margin: 0;
 }
+div.vertical-tabs ul.vertical-tabs-list {
+  margin: 0;
+}
 div.vertical-tabs a.token-dialog {
   margin: 1em;
   display: block;
