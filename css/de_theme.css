@@ -6941,7 +6941,7 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   display: inline-block;
   position: relative;
   margin-right: 2px;
-  bottom: -50px;
+  bottom: -54px;
   z-index: 10;
 }
 .islandora-basic-collection-wrapper .tk-label-items a, .page-islandora-search .tk-label-items a {
@@ -6956,7 +6956,7 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 .islandora-basic-collection-wrapper .object-workflow-stamp, .page-islandora-search .object-workflow-stamp {
   position: relative;
   left: 25%;
-  bottom: -50px;
+  bottom: -54px;
   display: inline-block;
 }
 .islandora-basic-collection-wrapper .object-workflow-stamp img, .page-islandora-search .object-workflow-stamp img {
