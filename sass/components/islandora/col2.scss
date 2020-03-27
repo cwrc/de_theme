@@ -272,7 +272,7 @@
   }
 
   ul.list-layout .right-wrapper {
-
+    float: right;
     position: static;
     @include breakpoint(500px) {
 
@@ -319,11 +319,33 @@
   }
 }
 
+.cwrc-search-teaser-list .right-wrapper {
+  .label {
+    float: left;
+    width: 100%;
+    text-align: left;
+    @include breakpoint(670px) {
+      width: auto;
+    }
+  }
+  float: left;
+  width: 100%;
+  text-align: left;
+  @include breakpoint(670px) {
+    text-align: right;
+    float: right;
+    width: 89%;
+  }
+}
 
-
-.islandora-basic-collection-wrapper, .page-islandora-search {
-  
-  
+.islandora-basic-collection-wrapper {
+  .islandora-basic-collection {
+    // > .right-wrapper {
+    //   float: right;
+    //   > div {
+    // 	left: auto;
+    //   }
+    // }
     .tk-label-items {
       display: inline-block;
       position: relative;
@@ -336,11 +358,9 @@
       //  }
       a {
         display: inline-block;
-        margin-left: 6px;
-        vertical-align: middle;
+        margin-left: 3px;
         img {
-          width: 35px;
-          height: auto;
+          height: 33px;
         }
       }
     }
@@ -348,37 +368,19 @@
       position: relative;
       left: 25%;
       bottom: -50px;
-      margin-right: 5px;
       display: inline-block;
 
       img {
-        width: 35px;
-        height: auto;
+        height: 35px;
       }
     }
 
     .cwrc-search-teaser-list {
-    
-      .right-wrapper {
-        text-align: left;
-        .label {
-
-          text-align: left;
-          @include breakpoint(670px) {
-            width: auto;
-          }
-        } 
-      }
-      .icon-wrapper {
-        float: right;
-        .tk-label-items, .object-workflow-stamp {
-          display: inline-block;
-          bottom: 0;
-          left: 0;
-        }
+      .tk-label-items {
+        bottom: 0;
       }
     }
-  
+  }
 }
 
 #block-cwrc-projects-project-tk-stamp-labels {
@@ -389,14 +391,13 @@
 
   .tk-label-items a {
     margin-left: 5px;
-    vertical-align: middle;
     img {
-      width: 35px;
-      height: auto;
+      height: 35px;
     }
   }
+
   .wokflow-stamp img {
-    width: 35px;
+    height: 35px;
     margin-left: 5px;
   }
 
