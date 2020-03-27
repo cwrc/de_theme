@@ -7462,7 +7462,7 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 
 .cwrc-search-teaser-list .right-wrapper {
   float: left;
-  width: 100%;
+  width: calc(100% - 48px);
   text-align: left;
 }
 .cwrc-search-teaser-list .right-wrapper .label {
@@ -7479,7 +7479,6 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   .cwrc-search-teaser-list .right-wrapper {
     text-align: right;
     float: right;
-    width: 89%;
   }
 }
 

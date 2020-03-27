@@ -329,12 +329,11 @@
     }
   }
   float: left;
-  width: 100%;
+  width: calc(100% - 48px);
   text-align: left;
   @include breakpoint(670px) {
     text-align: right;
     float: right;
-    width: 89%;
   }
 }
 
