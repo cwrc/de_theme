@@ -6953,6 +6953,12 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   width: 35px;
   height: auto;
 }
+.islandora-basic-collection-wrapper .tk-label-items:before, .page-islandora-search .tk-label-items:before {
+  content: '';
+  display: inline-block;
+  height: 35px;
+  vertical-align: middle;
+}
 .islandora-basic-collection-wrapper .object-workflow-stamp, .page-islandora-search .object-workflow-stamp {
   position: relative;
   left: 25%;

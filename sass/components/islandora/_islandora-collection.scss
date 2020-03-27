@@ -343,6 +343,12 @@
           height: auto;
         }
       }
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 35px;
+        vertical-align: middle;
+      }
     }
     .object-workflow-stamp {
       position: relative;
