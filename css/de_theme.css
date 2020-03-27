@@ -6908,10 +6908,6 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 .islandora-basic-collection ul.list-layout .right-wrapper {
   position: static;
 }
-.page-islandora-search .results ul.list-layout .right-wrapper img,
-.islandora-basic-collection ul.list-layout .right-wrapper img {
-  height: 35px;
-}
 
 /* =============================================================================
     List View
@@ -7427,10 +7423,6 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   float: right;
   position: static;
 }
-.page-islandora-search .results ul.list-layout .right-wrapper img,
-.islandora-basic-collection ul.list-layout .right-wrapper img {
-  height: 35px;
-}
 
 /* =============================================================================
     List View
@@ -7462,7 +7454,7 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 
 .cwrc-search-teaser-list .right-wrapper {
   float: left;
-  width: calc(100% - 48px);
+  width: calc(100% - 65px);
   text-align: left;
 }
 .cwrc-search-teaser-list .right-wrapper .label {
@@ -7478,6 +7470,7 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 @media (min-width: 670px) {
   .cwrc-search-teaser-list .right-wrapper {
     text-align: right;
+    width: calc(100% - 65px);
     float: right;
   }
 }
@@ -7502,9 +7495,6 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   bottom: -50px;
   display: inline-block;
 }
-.islandora-basic-collection-wrapper .islandora-basic-collection .object-workflow-stamp img {
-  height: 35px;
-}
 .islandora-basic-collection-wrapper .islandora-basic-collection .cwrc-search-teaser-list .tk-label-items {
   bottom: 0;
 }
@@ -7518,7 +7508,6 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
   margin-left: 5px;
 }
 #block-cwrc-projects-project-tk-stamp-labels .wokflow-stamp img {
-  height: 35px;
   margin-left: 5px;
 }
 

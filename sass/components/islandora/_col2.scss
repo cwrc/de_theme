@@ -278,7 +278,6 @@
 
     }
     img {
-      height: 35px;
     }
   }
 }
@@ -329,10 +328,11 @@
     }
   }
   float: left;
-  width: calc(100% - 48px);
+  width: calc(100% - 65px);
   text-align: left;
   @include breakpoint(670px) {
     text-align: right;
+    width: calc(100% - 65px);
     float: right;
   }
 }
@@ -370,7 +370,7 @@
       display: inline-block;
 
       img {
-        height: 35px;
+
       }
     }
 
@@ -396,7 +396,7 @@
   }
 
   .wokflow-stamp img {
-    height: 35px;
+
     margin-left: 5px;
   }
 
