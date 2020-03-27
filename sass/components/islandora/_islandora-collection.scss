@@ -327,7 +327,7 @@
     .tk-label-items {
       display: inline-block;
       position: relative;
-      margin-right: 5px;
+      margin-right: 2px;
       // left: 0;
       bottom: -50px;
       z-index: 10;
@@ -348,7 +348,7 @@
       position: relative;
       left: 25%;
       bottom: -50px;
-      margin-right: 5px;
+      //margin-right: 5px;
       display: inline-block;
 
       img {
@@ -375,6 +375,7 @@
           display: inline-block;
           bottom: 0;
           left: 0;
+          vertical-align: top;
         }
       }
     }
