@@ -7470,7 +7470,7 @@ form#views-form-og-members-admin-default .form-actions.form-wrapper {
 @media (min-width: 670px) {
   .cwrc-search-teaser-list .right-wrapper {
     text-align: right;
-    width: calc(100% - 65px);
+    width: calc(100% - 85px);
     float: right;
   }
 }

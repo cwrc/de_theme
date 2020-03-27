@@ -332,7 +332,7 @@
   text-align: left;
   @include breakpoint(670px) {
     text-align: right;
-    width: calc(100% - 65px);
+    width: calc(100% - 85px);
     float: right;
   }
 }
