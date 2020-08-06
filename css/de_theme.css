@@ -3147,6 +3147,10 @@ select[multiple] {
 
 .form-item .description {
   font-size: 15px !important;
+  word-break: normal;
+}
+.form-item-tk-labels-0-accessionCondition {
+display:none;
 }
 
 fieldset {

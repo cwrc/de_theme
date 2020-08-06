@@ -83,6 +83,7 @@ select[multiple] {
 
 .form-item .description {
   font-size: 15px !important;
+  word-break: normal;
 }
 
 //FIELDSET AND LEGEND
@@ -311,7 +312,9 @@ td.views-field-views-bulk-operations {
   }
 }
 
-
+.form-item-tk-labels-0-accessionCondition {
+display: none;
+}
 
 
 
