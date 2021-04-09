@@ -2531,7 +2531,7 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-html, button, input, select, textarea {
+html, html.js, button, input, select, textarea {
   font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
@@ -3988,7 +3988,7 @@ html body.admin-menu {
   background: #E2E2E2;
 }
 
-.region-main-prefix-right:before {
+.region-main-prefix-right:before, .region-main-prefix-right.clearfix:before {
   content: '';
   display: inline-block;
   height: 100%;
